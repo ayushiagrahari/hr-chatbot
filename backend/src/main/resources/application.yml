@@ -1,0 +1,10 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+
+chatbot:
+  fallback-message: "I'm sorry, I couldn't find an answer to your question. Please contact the HR team directly at hr@company.com or call ext. 1000."
+  min-match-score: 1
